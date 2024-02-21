@@ -593,8 +593,8 @@ h6 {
   top: 0;
   right: -400px;
   height: 100vh;
-  -webkit-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
 }
@@ -2174,6 +2174,10 @@ body {
   .header-menu {
     width: 100%;
     left: -100%;
+  }
+
+  .header-menu__show {
+    left: 0;
   }
 
   .footer {
