@@ -862,10 +862,16 @@ h6 {
 }
 
 .cart-product__content {
+  padding-left: 15px;
   width: 100%;
 }
 
+.cart-product__text {
+  margin-top: -10px;
+}
+
 .cart-product__text a {
+  line-height: 30px;
   color: gray;
 }
 
@@ -893,6 +899,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 26px;
 }
 
 .cart-product__input input[type=number] {
@@ -1493,7 +1500,7 @@ body {
   background-color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: black;
-  margin-right: 15px;
+  margin: 0px 10px;
   font-size: 16px;
   font-weight: 500;
   -webkit-transition: all 0.5s ease 0s;
@@ -2342,10 +2349,12 @@ body {
 
   .header__shoping-card {
     width: 100%;
+    right: -100%;
   }
 
   .header-menu {
     width: 100%;
+    left: -100%;
   }
 
   .footer {

@@ -862,10 +862,16 @@ h6 {
 }
 
 .cart-product__content {
+  padding-left: 15px;
   width: 100%;
 }
 
+.cart-product__text {
+  margin-top: -10px;
+}
+
 .cart-product__text a {
+  line-height: 30px;
   color: gray;
 }
 
@@ -893,6 +899,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 26px;
 }
 
 .cart-product__input input[type=number] {
@@ -1387,19 +1394,6 @@ body {
 .product:hover {
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .sales-lider {
@@ -2174,10 +2168,12 @@ body {
 
   .header__shoping-card {
     width: 100%;
+    right: -100%;
   }
 
   .header-menu {
     width: 100%;
+    left: -100%;
   }
 
   .footer {
