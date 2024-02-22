@@ -1894,8 +1894,8 @@ body {
   }
 
   .header-menu {
+    left: -500px;
     width: 100%;
-    left: -100%;
   }
 
   .header-menu__show {

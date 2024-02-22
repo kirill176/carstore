@@ -1113,11 +1113,6 @@ body {
   display: none;
 }
 
-.shop .clean-filters:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: black;
-}
-
 .shop__menu {
   width: 275px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1129,22 +1124,6 @@ body {
   position: relative;
   margin-left: 25px;
   width: 280px;
-}
-
-.shop__card:hover {
-  -webkit-box-shadow: 0px 0px 5px black;
-          box-shadow: 0px 0px 5px black;
-  z-index: 2;
-}
-
-.shop__card:hover::after {
-  height: 0px;
-}
-
-.shop__card:hover .shop__card-image img {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .shop__card::after {
@@ -1215,12 +1194,6 @@ body {
   font-weight: 600;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-}
-
-.shop__card-button button:hover {
-  color: red;
-  background-color: inherit;
-  border: 1px solid red;
 }
 
 .shop__products {
@@ -1371,12 +1344,6 @@ body {
   transition: background-color 0.5s ease 0s, color 0.5s ease 0s;
 }
 
-.price__input button:hover {
-  border: 1px solid red;
-  background-color: inherit;
-  color: red;
-}
-
 .price__slider {
   width: 100%;
   margin: 15px 0px;
@@ -1471,10 +1438,6 @@ body {
   background-color: white;
 }
 
-.sort option:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
 .sort .filters-button {
   display: none;
   margin-left: 25px;
@@ -1505,11 +1468,6 @@ body {
   font-weight: 500;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-}
-
-.pagination button:hover {
-  background-color: red;
-  color: white;
 }
 
 .pagination .active {
@@ -2353,8 +2311,8 @@ body {
   }
 
   .header-menu {
+    left: -500px;
     width: 100%;
-    left: -100%;
   }
 
   .header-menu__show {
@@ -2409,5 +2367,49 @@ body {
     text-align: center;
     width: 325px;
     padding-top: 25px;
+  }
+}
+
+@media (hover: hover) {
+  .shop .clean-filters:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+  }
+
+  .shop__card:hover {
+    -webkit-box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 5px black;
+    z-index: 2;
+  }
+
+  .shop__card:hover::after {
+    height: 0px;
+  }
+
+  .shop__card:hover .shop__card-image img {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+
+  .shop__card-button button:hover {
+    color: red;
+    background-color: inherit;
+    border: 1px solid red;
+  }
+
+  .price__input button:hover {
+    border: 1px solid red;
+    background-color: inherit;
+    color: red;
+  }
+
+  .sort option:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .pagination button:hover {
+    background-color: red;
+    color: white;
   }
 }

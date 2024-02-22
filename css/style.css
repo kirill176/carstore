@@ -1125,12 +1125,6 @@ body {
   transition: all 0.8s ease 0s;
 }
 
-.slider__text .buttons .slick-button:hover {
-  background-color: inherit;
-  color: black;
-  border: 1px solid black;
-}
-
 .categories {
   max-width: 1200px;
   margin: auto;
@@ -1202,12 +1196,6 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.categories__content .category:hover .category__image {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .cards-list {
   max-width: 1200px;
   margin: auto;
@@ -1277,12 +1265,6 @@ body {
   font-weight: 600;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
-}
-
-.card__button button:hover {
-  background-color: inherit;
-  border: 1px solid black;
-  color: black;
 }
 
 .accessories {
@@ -1389,11 +1371,6 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   color: white;
-}
-
-.product:hover {
-  -webkit-box-shadow: 0 0 5px black;
-          box-shadow: 0 0 5px black;
 }
 
 .sales-lider {
@@ -2172,8 +2149,8 @@ body {
   }
 
   .header-menu {
+    left: -500px;
     width: 100%;
-    left: -100%;
   }
 
   .header-menu__show {
@@ -2381,5 +2358,30 @@ body {
 
   .faq-list__active:nth-child(4) {
     max-height: 565px;
+  }
+}
+
+@media (hover: hover) {
+  .slider__text .buttons .slick-button:hover {
+    background-color: inherit;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .categories__content .category:hover .category__image {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  .card__button button:hover {
+    background-color: inherit;
+    border: 1px solid black;
+    color: black;
+  }
+
+  .product:hover {
+    -webkit-box-shadow: 0 0 5px black;
+            box-shadow: 0 0 5px black;
   }
 }
