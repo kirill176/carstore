@@ -1,0 +1,205 @@
+@media (max-width: 1220px) {
+  .shop {
+    max-width: 960px;
+
+    &__menu {
+      max-width: 220px;
+      padding: 15px;
+    }
+
+    &__card {
+      margin-left: 15px;
+      max-width: 221.6px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .shop {
+    max-width: 720px;
+    &__container {
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      background-color: white;
+      height: 100%;
+      transition: all 0.5s ease 0s;
+    }
+
+    &__close {
+      height: 35px;
+      width: 100%;
+      position: relative;
+      display: block;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .close {
+        position: relative;
+        float: right;
+        height: 35px;
+        width: 35px;
+        background-color: inherit;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 25px;
+          width: 2px;
+          border-radius: 2px;
+          top: 4px;
+          right: 16.5px;
+          background-color: black;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    &__menu {
+      padding: 15px 40px;
+      max-width: 100%;
+      width: 100%;
+      height: 88%;
+      overflow: scroll;
+
+    }
+
+    &__submit {
+      position: absolute;
+      bottom: 0;
+      height: 80px;
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      display: block;
+
+      .submit {
+        margin: auto;
+        background-color: red;
+        height: 45px;
+        width: 100%;
+        color: white;
+        font-weight: 16px;
+        transition: all 0.5s ease 0s;
+        font-size: 16px;
+
+        &:hover {
+          background-color: inherit;
+          border: 1px solid red;
+          color: red;
+        }
+      }
+    }
+    &__card-title {
+      height: 80px;
+    }
+  }
+
+  .price {
+    &__input {
+      input {
+        max-width: 40%;
+        width: 35%;
+      }
+    }
+  }
+
+  .category-menu {
+    &__list {
+      li {
+        padding-bottom: 10px;
+        a {
+          font-size: 16px;
+          color: black;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .showed {
+    overflow: hidden;
+    right: 0;
+  }
+
+  .sort {
+    .filters-button {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .shop {
+    max-width: 480px;
+    &__card {
+      margin-left: 15px;
+      max-width: 220px;
+    }
+
+    &__content{
+        padding: 0px 15px 0px 5px;
+    }
+
+    &__title {
+        flex-direction: column;
+        justify-content: center;
+      h1 {
+        font-size: 30px;
+        margin: 10px 0px;
+        font-weight: 500;
+      }
+    }
+
+    &__card-button {
+        position: relative;
+        bottom: 0;
+        box-shadow: none;
+    }
+
+    &__card{
+        margin: 0;
+        width: 100%;
+    }
+
+    &__card-title {
+        h6{
+            font-size: 12px;
+        }
+      }
+
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 5px;
+      }
+  }
+
+  .sort{
+    width: 100%;
+    justify-content: space-between;
+        label{
+            margin: 0;
+        }
+        &__select{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 10px;
+        }
+  }
+}

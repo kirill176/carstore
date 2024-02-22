@@ -1,0 +1,157 @@
+@media (max-width: 1220px) {
+  .header {
+    &__icons {
+      max-width: 960px;
+
+      .work-time {
+        display: none;
+      }
+    }
+
+    &__content {
+      max-width: 960px;
+    }
+
+    &__shop-menu {
+      max-width: 960px;
+    }
+
+    &__buyers-menu {
+      max-width: 960px;
+    }
+
+    &__search-menu {
+      max-width: 960px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .header {
+    &__icons {
+      max-width: 720px;
+      .burger {
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 35px;
+        &::before,
+        &::after {
+          content: "";
+          background-color: white;
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+          border-radius: 2px;
+        }
+        &::before {
+          top: 5px;
+        }
+
+        &::after {
+          bottom: 5px;
+        }
+
+        span {
+          border-radius: 2px;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          background-color: white;
+          height: 3px;
+          top: 15.5px;
+          transition: all 0s ease 0.5s;
+        }
+
+        &__active {
+          opacity: 0;
+        }
+      }
+    }
+    &__content {
+      padding: 21px 32px;
+      max-width: 720px;
+    }
+    .email {
+      display: none;
+    }
+
+    .language-change {
+      display: none;
+    }
+    .social-media {
+      svg {
+        margin-right: 25px;
+      }
+    }
+    &__list {
+      display: none;
+    }
+    &__search {
+      margin-right: -50%;
+    }
+    &__shop-menu {
+      display: none;
+    }
+
+    &__buyers-menu {
+      display: none;
+    }
+
+    &__search-menu {
+      margin-top: 0px;
+      max-width: 720px;
+    }
+  }
+
+  .header-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 740px) {
+  .header {
+    &__icons {
+      max-width: 480px;
+    }
+    &__content {
+      max-width: 480px;
+    }
+    .social-media {
+      display: none;
+    }
+    .favorite {
+      display: none;
+    }
+    &__search {
+      margin-right: -10%;
+    }
+
+    &__search-menu {
+      max-width: 480px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__icons {
+      padding: 15.25px 15px;
+    }
+
+    &__shoping-card{
+      width: 100%;
+      right: -100%;
+    }
+  }
+
+  .header-menu {
+    left: -500px;
+    width: 100%;
+    &__show {
+      left: 0;
+    }
+  }
+}
