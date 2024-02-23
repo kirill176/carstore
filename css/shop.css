@@ -1061,11 +1061,17 @@ body {
 }
 
 .shop__filters {
-  margin: 25px 0px 5px 35px;
+  margin: 20px 0px 5px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .shop__filters a {
   position: relative;
+  margin-top: 10px;
   margin-right: 15px;
   padding: 5px 30px 5px 15px;
   border-radius: 15px;
